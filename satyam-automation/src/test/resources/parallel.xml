@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="10" parallel="classes">
+  
+  <!-- Test for different browsers (Edge, Firefox, Chrome) -->
+  <test name="Test">
+    <classes>
+      <!-- Test for herokuappLogin and herokuappLogin1 on Edge and Firefox -->
+      <class name="com.qa.satyam.herokuappLogin"/> 
+      <class name="com.qa.satyam.herokuappLogin1"/>
+      
+      <!-- Test for herokuappAlert and herokuappAlert1 on Chrome and Edge -->
+      <class name="com.qa.satyam.herokuappAlert"/>
+      <class name="com.qa.satyam.herokuappAlert1"/>
+      
+      <!-- New test class for Firefox alert handling -->
+      <!-- <class name="com.qa.satyam.herokuappAlertFirefox"/>  -->
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
